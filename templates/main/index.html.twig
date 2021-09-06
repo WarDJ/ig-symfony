@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+
+{% block body %}
+    <div class="example-wrapper">
+        <table border="1">
+            {% for item in urls %}
+                <tr>
+                    <td><a href="{{ item.url }}">{{ item.url }}</a></td>
+                    <td>{{ item.countImages }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+{% endblock %}
